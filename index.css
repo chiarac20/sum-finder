@@ -1,0 +1,72 @@
+body {
+    font-family: Arial;
+    color:darkblue;
+    background-color: rgb(214, 231, 253);
+}
+.random-number {
+    padding: 10% 0;
+    display: inline-block;
+    color: darkblue;
+    border:2px darkblue solid;
+    font-size: 120%;
+    background-color: white;
+    width: 12vw;
+}
+
+
+.random-sum {
+    border: 2px darkblue solid;
+    font-size: 130%;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+#instruction {
+    font-size: 25px;
+    padding-top: 5%;
+}
+
+.alert-box, 
+.time-out-box {
+    position: fixed;
+    background-color: rgba(100, 100, 50, .5);
+    width: 100%;
+    top: 0;
+    bottom:0;
+}
+
+.display-none {
+    display: none;
+}
+
+.correct-answer {
+    background-color:lightgreen;
+}
+
+.wrong-answer {
+    background-color: darksalmon;
+}
+
+.alert-body,
+.time-out-body{
+    margin: auto;
+    width: 80%;
+    margin-top: 26vh;
+    padding: 15px;
+    border-radius: 25px;
+    border: 2px white solid;
+}
+
+.correct-answer .is-wrong,
+.wrong-answer .is-correct {
+    display: none;
+}
+
+.alert-msg {
+    padding-top: 3vh;
+    height: 25vh;   
+}
+.time-out-body {
+    background-color:rgb(245, 245, 86);
+}

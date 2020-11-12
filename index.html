@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum finder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" async defer></script>
+</head>
+<body class="text-center">
+    <div class="container">
+        <h1 class="alert">Sum finder</h1>
+        <div class="row">
+            <div class="col"><span id="random-number-1" class="random-number badge badge-pill badge-primary"></span></div>
+            <div class="col"><span id="random-number-2" class="random-number badge badge-pill badge-primary"></span></div>
+            <div class="col"><span id="random-number-3" class="random-number badge badge-pill badge-primary"></span></div>
+        </div>
+        <div id="instruction">Click on the correct sum</div>
+        <div class="row">
+            <button type="button" id="random-sum-2" class="random-sum btn btn-info btn-lg btn-block"></button>
+            <button type="button" id="random-sum-3" class="random-sum btn btn-info btn-lg btn-block"></button>
+            <button type="button" id="random-sum-1" class="random-sum btn btn-info btn-lg btn-block"></button>
+        </div>
+    </div>
+    <div class="alert-box display-none" id="alert-box">
+        <div class="time-out-body container display-none" id="time-out-body">
+            <div class="alert-msg time-out h2" id="alert-msg">Time out</div>
+            <button id="time-out-ok" class="time-out-ok btn btn-info btn-block">Start new game</button>
+        </div>
+        <div class="alert-body container display-none" id="alert-body">
+            <div class="alert-msg is-correct h2">Congratulations, correct answer!</div>
+            <div class="alert-msg is-wrong h2">Sorry, wrong answer.</div>
+            <button id="alert-ok" class="alert-ok btn btn-info btn-block">OK</button>
+        </div>
+        
+    </div>
+</body>
+</html>
